@@ -9,16 +9,17 @@
 
 :root{
     --black: #333;
-    --green: #017143;
+    --red: #FB0268;
     --white: #fff;
     --white2: #fff,
     --black2: #333;
 }
 
-.dark{
+.dark {
     --black: #fff;
-    --white: #113838;
-    --black2: #124e36;
+    --red: #FB0268; /* Mantenha a mesma cor vermelha para o modo escuro, se aplicável */
+    --white: #000000; /* Ajuste para contraste em fundo vermelho */
+    --black2: #4e1212; /* Ajuste para contraste em fundo vermelho */
 }
 
 section{
@@ -33,11 +34,12 @@ section{
 }
 
 header{
+  background-color: #FB0268;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +48,9 @@ header{
 
 header .logo{
     position: relative;
-    max-width: 70%;
+    max-width: 10   0%;
+   
+    
 }
 
 header ul{
@@ -96,11 +100,11 @@ header ul li a{
 
 .content .textbox h2 span{
     font-size: 1.2em;
-    color: var(--green);
+    color: var(--red);
 }
 
 .dark .content .textbox h2 span{
-    color: #00ff90;
+    color: #FB0268;
 }
 
 
@@ -113,7 +117,7 @@ header ul li a{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: var(--green);
+    background: var(--red);
     color: var(--white);
     border-radius: 40px;
     font-weight: 500;
@@ -134,7 +138,7 @@ header ul li a{
     position: absolute;
     width: 350px;
     height: 350px;
-    background: var(--green);
+    background: var(--black);
     border-radius: 50%;
 }
 
@@ -177,7 +181,7 @@ header ul li a{
 }
 
 .sci li a:hover{
-    background: var(--green);
+    background: var(--red);
 }
 
 .themesswitch{
